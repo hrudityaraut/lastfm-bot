@@ -5,10 +5,10 @@ const client = new Client({
   intents: [GatewayIntentBits.Guilds]
 });
 
-const TOKEN = 'MTQ4ODAxMzczNzk5MzQzNzM0Ng.GVkO1x.UGAABV7p41gZdsVVz91WeBeHAocsV_7xYfhJTg';
-const LASTFM_API_KEY = 'd162ed01e52848786700f06d9f9e63df';
-const USERNAME = 'nguyenjason21';
-const CHANNEL_ID = '1488025431952199680';
+const TOKEN = process.env.TOKEN;
+const LASTFM_API_KEY = process.env.LASTFM_API_KEY;
+const USERNAME = process.env.USERNAME;
+const CHANNEL_ID = process.env.CHANNEL_ID;
 
 let lastTrack = null;
 
